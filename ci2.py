@@ -6,19 +6,11 @@
 
 pip install opencv-python
 
-
-# In[21]:
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 import cv2
-
-
-# In[67]:
-
 
 class Chest_Image:
     def __init__(self, path): # an instance that takes the path of the image everytime the class is called 
@@ -53,33 +45,11 @@ class Chest_Image:
         sns.heatmap(self.selection, cmap = 'gray', ax = ax2)
         # plotting the heatmap of the original vs the modified image to show the difference in the amount of information in both
 
-# In[68]:
-
-
 chest = Chest_Image(r"C:\Users\Abdelrahman Helal\Downloads\chestmnist.npz")
 # becaue of the random value, each time the class is run, there will be a different image, but this image has an index of 4599
 
-
-# In[69]:
-
-
 chest.show_image()
-
-
-# In[70]:
-
 
 chest.invert_image()
 
-
-# In[71]:
-
-
 chest.enhanced()
-
-
-# In[ ]:
-
-
-
-
