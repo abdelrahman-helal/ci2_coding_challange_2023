@@ -53,15 +53,6 @@ class Chest_Image:
         sns.heatmap(self.selection, cmap = 'gray', ax = ax2)
         # plotting the heatmap of the original vs the modified image to show the difference in the amount of information in both
 
-        
-        
-
-
-
-        
-    
-
-
 # In[68]:
 
 
